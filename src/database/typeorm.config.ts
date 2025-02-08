@@ -12,7 +12,6 @@ const AppDataSource = new DataSource({
   migrations: [join(__dirname, './migrations/*.{js,ts}')],
   synchronize: false, // Use migrations instead of auto-sync
   logging: true,
-  ssl: { rejectUnauthorized: false }
 });
 
 export default AppDataSource;
